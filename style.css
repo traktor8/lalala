@@ -16,7 +16,7 @@
 header {
     width: 100vw;
     object-fit: cover;
-    height: 100vh;
+    height: 20vh;
     display: flex;
 }
 .navbar {
@@ -34,7 +34,6 @@ header {
     column-gap: 20px;
     align-items: center;
     justify-content: space-evenly;
-
 }
 .navbar-li-a{
     text-decoration: none;
@@ -70,14 +69,14 @@ button{
     border-radius: 5px;
     padding: 14px 50px;
     border-color: var(--color-pink);
-margin-left: 266PX;
 }
 .home{
     flex-direction: row;
     display: flex;
-    column-gap: 20px;
+    column-gap: 40px;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 .text p{
@@ -100,4 +99,22 @@ margin-left: 266PX;
     color: var(--color-black);
     font-weight: 100;
     padding-bottom: 50px;
+}
+.menu{
+    margin-right: 266px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+}
+.card{
+     display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        border: var(--color-black) ;
+}
+.ch{
+display: flex;
+flex-direction: row;
+column-gap: 39px;
 }
