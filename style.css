@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+:root {
+    --color-black:#0F0101;
+    --color-pink:#D23166;
+    --color-white:#fff;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: content-box;
+    margin: auto;
+}
+header {
+    width: 100vw;
+    object-fit: cover;
+    height: 100vh;
+    display: flex;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 20px 0!important;
+}
+.navbar-logo {
+    padding-right: 266px;
+}
+.navbar{
+    flex-direction: row;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.navbar-li-a{
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+    font-size: 14px;
+}
+.navbar-li-aa{
+    text-decoration: none;
+    font-weight: 300;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-pink);
+    font-size: 14px;
+    font-weight: bold;
+}
+.navbar li{
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    column-gap: 12px;
+    
+}
+button{
+    font-family:'Hind Madurai', sans-serif;
+    font-weight: bold;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 14px 50px;
+    border-color: var(--color-pink);
+margin-left: 266PX;
+}
+.home{
+    flex-direction: row;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 450;
+    letter-spacing: 1px;
+}
+.text h1{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 57px;
+    font-weight: bold;
+    color: var(--color-black);
+    padding-top: 6px;
+    padding-bottom: 35px;
+}
+.text h2{
+    font-family: 'Hind Madurai',sans-serif;
+    font-size: 18px;
+    color: var(--color-black);
+    font-weight: 100;
+    padding-bottom: 50px;
+}
