@@ -4,8 +4,12 @@
 :root {
     --color-black:#0F0101;
     --color-pink:#D23166;
+    --color-pink-light: #F8EDF0;
     --color-white:#fff;
+    --bg-color:#F8EDF0;
+
 }
+
 .container {
     max-width: 1200px;
     width: 100%;
@@ -23,7 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    padding: 20px 20px 0!important;
 }
 .navbar-logo {
     padding-right: 266px;
@@ -100,21 +103,198 @@ button{
     font-weight: 100;
     padding-bottom: 50px;
 }
+
 .menu{
     margin-right: 266px;
     display: flex;
     flex-direction: row;
     column-gap: 25px;
 }
+
 .card{
-     display: flex;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        border: var(--color-black) ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 12px 7px;
+    border: 1px solid rgba(0, 0, 0, 0.03); 
+    border-radius: 10px;
+        /* время анимации изменения стилей */
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    box-shadow: 2px 2px 23px 1px rgba(0,0,0,0.05);
+    padding: 12px 7px;
+    border-color: transparent;
+    /* время анимации изменения стилей */
+    transition: 0.3s;
+    /* border: none; */
+}
+
+
+.bg-pink {
+    background-color: var(--bg-color);
+
 }
 .ch{
-display: flex;
-flex-direction: row;
-column-gap: 39px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 39px;
+    padding: 70px 0;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-revert {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.card p{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 14px;
+    color: var(--color-black);
+}
+.card h1{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 9px;
+}
+.blok{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 60px;
+}
+.blok h1{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 16px;
+}
+.blok p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--color-black);
+    margin-bottom: 35px;
+    line-height: 20px;
+}
+.zagolovok h1{
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 64px;
+    margin-top: 137px;
+    text-align: center;
+}
+.li{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin: auto;
+}
+.li-a{
+    text-decoration: none;
+    font-weight: 400;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+    font-size: 14px;
+}
+.li-aa{
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: bold;
+}
+.a{
+    align-items: center;
+}
+.menu-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+.card-m{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-items: center;
+    column-gap: 75px;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+}
+.text-box h1{
+    font-family: 'Hind Madurai',sans-serif;
+    font-weight: bold;
+    color: var(--color-black);
+    font-size: 26px;
+    margin-bottom: 11px;
+}
+.text-box p{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 100;
+    color: var(--color-black);
+    font-size: 16px;
+    margin-bottom: 28px ;
+}
+.text-box h2{
+    font-family: 'Hind Madurai',sans-serif;
+    font-weight: 500;
+    color: var(--color-black);
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+.menu-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
+}
+.footerr{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: var(--color-black);
+}
+.column-1{
+    margin-top: 143px;
+}
+.column-1 p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(255, 255, 255, 70%);
+}
+.menu-li-a{
+    text-decoration: none;
+    font-weight: 100;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255, 70%);
+    font-size: 12px;
+}
+.menu li{
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    column-gap: 12px;
 }
